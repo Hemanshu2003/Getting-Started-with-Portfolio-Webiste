@@ -1,0 +1,34 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: linear-gradient(
+    rgba(255, 166, 0, 0.469),
+    rgba(0, 255, 255, 0.578)
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background-color: rgb(213, 122, 213);
+  color: white;
+  border-radius: 12px;
+  width: 400px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.child {
+  background-color: greenyellow;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  border-radius: 12px;
+}
