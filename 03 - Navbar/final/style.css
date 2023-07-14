@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* BACKGROUND COLOR CODES */
+/* #ee4035,
+#f37736,
+#fdf498,
+#7bc043,
+#0392cf */
+
+/* TEXT SHADOW FOR HEADING  */
+
+/* text-shadow: 1px 1px 1px #919191, 1px 2px 1px #919191, 1px 3px 1px #919191,
+1px 4px 1px #919191, 1px 5px 1px #919191, 1px 6px 1px #919191,
+1px 7px 1px #919191, 1px 8px 1px #919191, 1px 9px 1px #919191,
+1px 10px 1px #919191, 1px 18px 6px rgba(16, 16, 16, 0.4),
+1px 22px 10px rgba(16, 16, 16, 0.2), 1px 25px 35px rgba(16, 16, 16, 0.2),
+1px 30px 60px rgba(16, 16, 16, 0.4); */
+
+/* CHALLENGE FOR YOU GUYZ */
+/* https://codepen.io/ytarabe/pen/XWWMzQJ  -> use this amazing animation for btn */
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.hero-section {
+  width: 100%;
+  position: relative;
+  background: linear-gradient(
+    45deg,
+    #ee4035,
+    #f37736,
+    #fdf498,
+    #7bc043,
+    #0392cf
+  );
+  background-size: 400% 400%;
+  animation: dancingBG 10s ease infinite;
+  height: 80vh;
+  overflow: hidden;
+}
+
+@keyframes dancingBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+nav {
+  height: 120px;
+  display: flex;
+}
+
+ul {
+  margin: auto;
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  letter-spacing: 1px;
+  font-size: 22px;
+}
+
+a:hover {
+  color: #0392cf;
+  border-bottom: 4px solid #0392cf;
+}
+
+.changeThemeBtn {
+  background: transparent;
+  border: 2px solid black;
+  color: black;
+  padding: 12px;
+  border-radius: 12px;
+  cursor: pointer;
+  letter-spacing: 1px;
+  font-size: 1.3em;
+  transition: 0.25s;
+}
+
+.changeThemeBtn:hover {
+  color: white;
+  background-color: #0392cf;
+  border: 2px solid white;
+}
+
+.name-tag {
+  width: 80%;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  margin-top: 200px;
+}
+
+.myName {
+  font-size: 5em;
+  color: black;
+  font-weight: 700;
+  text-shadow: 1px 1px 1px #919191, 1px 2px 1px #919191, 1px 3px 1px #919191,
+    1px 4px 1px #919191, 1px 5px 1px #919191, 1px 6px 1px #919191,
+    1px 7px 1px #919191, 1px 8px 1px #919191, 1px 9px 1px #919191,
+    1px 10px 1px #919191, 1px 18px 6px rgba(16, 16, 16, 0.4),
+    1px 22px 10px rgba(16, 16, 16, 0.2), 1px 25px 35px rgba(16, 16, 16, 0.2),
+    1px 30px 60px rgba(16, 16, 16, 0.4);
+}
+
+.profession {
+  color: black;
+  margin-top: 30px;
+  font-size: 1.3em;
+  letter-spacing: 2px;
+  word-spacing: 4px;
+}
+
+.logo {
+  width: 300px;
+  position: absolute;
+  bottom: 5px;
+  right: 10px;
+  animation: babuRotate 4s ease;
+}
+
+@keyframes babuRotate {
+  0% {
+    transform: translateY(-900px) rotate(0deg);
+  }
+
+  100% {
+    transform: translateY(0) rotate(360deg);
+  }
+}
