@@ -5,10 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My portfolio Website</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="./script.js" defer></script>
   </head>
+
   <body>
     <!-- Hero Section -->
-    <section class="hero-section">
+    <section class="hero-section" id="hero-section">
       <!-- navlink -->
       <nav>
         <ul>
@@ -24,11 +26,15 @@
           <li>
             <a href="#project">Project</a>
           </li>
-          <button class="changeThemeBtn">Change theme</button>
+          <button class="changeThemeBtn" id="changeThemeBtn">
+            Change theme
+          </button>
         </ul>
       </nav>
-
-      <div class="name-tag">
+      <button class="changeThemeBtn-mobile" id="changeThemeBtn-mobile">
+        Change theme
+      </button>
+      <div class="name-tag" id="name-tag">
         <h1 class="myName">Hemanshu Waghmare</h1>
         <h3 class="profession">Student , learner & Developer</h3>
       </div>
