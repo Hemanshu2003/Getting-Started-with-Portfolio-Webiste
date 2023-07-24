@@ -19,6 +19,14 @@
 /* CHALLENGE FOR YOU GUYZ */
 /* https://codepen.io/ytarabe/pen/XWWMzQJ  -> use this amazing animation for btn */
 
+/* diff background color */
+/* 
+'linear-gradient(45deg,#a8e6cf,#dcedc1,#ffd3b6,#ffaaa5,#ff8b94)',
+  'linear-gradient(45deg,#051e3e,#251e3e,#451e3e,#651e3e,#851e3e)',
+  'linear-gradient(45deg,#ee4035,#f37736,#fdf498,#7bc043,#0392cf)',
+  'linear-gradient(45deg,#316879,#1fbfb8, #05716c, #1978a5, #031163)',
+  */
+
 * {
   padding: 0;
   margin: 0;
@@ -28,16 +36,7 @@
 .hero-section {
   width: 100%;
   position: relative;
-  background: linear-gradient(
-    45deg,
-    #ee4035,
-    #f37736,
-    #fdf498,
-    #7bc043,
-    #0392cf
-  );
-  background-size: 400% 400%;
-  animation: dancingBG 10s ease infinite;
+
   height: 80vh;
   overflow: hidden;
 }
@@ -103,6 +102,7 @@ a:hover {
 }
 
 .name-tag {
+  color: black;
   width: 80%;
   margin: auto;
   align-items: center;
@@ -112,7 +112,7 @@ a:hover {
 
 .myName {
   font-size: 5em;
-  color: black;
+
   font-weight: 700;
   text-shadow: 1px 1px 1px #919191, 1px 2px 1px #919191, 1px 3px 1px #919191,
     1px 4px 1px #919191, 1px 5px 1px #919191, 1px 6px 1px #919191,
@@ -123,7 +123,6 @@ a:hover {
 }
 
 .profession {
-  color: black;
   margin-top: 30px;
   font-size: 1.3em;
   letter-spacing: 2px;
