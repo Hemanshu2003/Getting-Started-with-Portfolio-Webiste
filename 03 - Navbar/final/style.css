@@ -147,3 +147,45 @@ a:hover {
     transform: translateY(0) rotate(360deg);
   }
 }
+
+.changeThemeBtn-mobile {
+  display: none;
+}
+
+@media (max-width: 980px) {
+  nav {
+    display: none;
+  }
+  .logo {
+    width: 150px;
+  }
+  .name-tag {
+    font-size: 8px;
+    margin-top: 150px;
+  }
+
+  .profession {
+    font-size: 16px;
+  }
+  .changeThemeBtn-mobile {
+    display: block;
+    background: transparent;
+    border: 2px solid black;
+    color: black;
+    padding: 8px;
+    border-radius: 12px;
+    cursor: pointer;
+    letter-spacing: 1px;
+    font-size: 1em;
+    transition: 0.25s;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+
+  .changeThemeBtn-mobile:hover {
+    color: white;
+    background-color: #0392cf;
+    border: 2px solid white;
+  }
+}
